@@ -1,0 +1,42 @@
+{
+  "title": "JSXGraph",
+  "description": "Create interactive mathematics",
+  "majorVersion": 0,
+  "minorVersion": 1,
+  "patchVersion": 1,
+  "runnable": 1,
+  "fullscreen": 1,
+  "author": "A. Wassermann",
+  "license": "MIT",
+  "machineName": "H5P.JSXGraph",
+  "coreApi": {
+    "majorVersion": 1,
+    "minorVersion": 3
+  },
+  "embedTypes": [
+    "iframe"
+  ],
+  "preloadedCss": [
+    {
+      "path": "h5p-jsxgraph.css"
+    },
+    {
+      "path": "jsxgraph.css"
+    }
+  ],
+  "preloadedJs": [
+    {
+      "path": "jsxgraph.js"
+    },
+    {
+      "path": "jsxgraphcore.js"
+    }
+  ],
+  "editorDependencies": [
+    {
+      "machineName": "H5PEditor.ShowWhen",
+      "majorVersion": 1,
+      "minorVersion": 0
+    }
+  ]
+}

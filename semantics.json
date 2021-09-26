@@ -1,0 +1,148 @@
+[
+  {
+    "label": "Text 1",
+    "name": "commentPre",
+    "type": "text",
+    "optional": true,
+    "default": "",
+    "enterMode": "p",
+    "widget": "html",
+    "description": "Text before the construction.",
+    "tags": [
+      "strong",
+      "em",
+      "u",
+      "a",
+      "ul",
+      "ol",
+      "h2",
+      "h3",
+      "hr",
+      "pre",
+      "code"
+    ]
+  },
+  {
+    "label": "Construction",
+    "name": "code",
+    "type": "text",
+    "widget": "textarea",
+    "default": "var board = JXG.JSXGraph.initBoard(BOARDID, {\n  boundingbox: [-5,5,5,-5], axis: true});\nvar pol = board.create('polygon', [[-3,-3], [3,-3], [1,4]], {\n  fillColor: 'yellow',\n  vertices: {color: 'blue'}\n});",
+    "description": "JavaScript or JessieCode code for the construction"
+  },
+  {
+    "label": "Text 2",
+    "name": "commentPost",
+    "type": "text",
+    "optional": true,
+    "default": "",
+    "enterMode": "p",
+    "widget": "html",
+    "description": "Text after the construction.",
+    "tags": [
+      "strong",
+      "em",
+      "u",
+      "a",
+      "ul",
+      "ol",
+      "h2",
+      "h3",
+      "hr",
+      "pre",
+      "code"
+    ]
+  },
+  {
+    "name": "advanced",
+    "type": "group",
+    "label": "Advanced settings",
+    "importance": "medium",
+    "fields": [
+      {
+        "label": "Board Id",
+        "name": "boardId",
+        "type": "text",
+        "default": "",
+        "optional": true,
+        "description": "Id of the JSXGraph container. If empty (which is the default) use the constant BOARDID in the JavaScript code."
+      },
+      {
+        "name": "showFixedSize",
+        "type": "boolean",
+        "label": "Fixed size",
+        "description": "Set JSXGraph container to fixed width and height",
+        "importance": "low",
+        "default": false
+      },
+      {
+        "label": "Width",
+        "name": "width",
+        "type": "text",
+        "default": "500px",
+        "optional": true,
+        "description": "Width of JSXGraph container, use any CSS unit.",
+        "widget": "showWhen",
+        "showWhen": {
+          "rules": [
+            {
+              "field": "showFixedSize",
+              "equals": true
+            }
+          ]
+        }
+      },
+      {
+        "label": "Height",
+        "name": "height",
+        "type": "text",
+        "default": "500px",
+        "optional": true,
+        "description": "Height of JSXGraph container, use any CSS unit.",
+        "widget": "showWhen",
+        "showWhen": {
+          "rules": [
+            {
+              "field": "showFixedSize",
+              "equals": true
+            }
+          ]
+        }
+      },
+      {
+        "label": "Max-width",
+        "name": "maxWidth",
+        "type": "text",
+        "default": "100%",
+        "optional": true,
+        "description": "Max-width of JSXGraph container.",
+        "widget": "showWhen",
+        "showWhen": {
+          "rules": [
+            {
+              "field": "showFixedSize",
+              "equals": false
+            }
+          ]
+        }
+      },
+      {
+        "label": "Aspect ratio",
+        "name": "aspectRatio",
+        "type": "text",
+        "optional": true,
+        "default": "2/1",
+        "description": "Aspect ratio of JSXGraph container.",
+        "widget": "showWhen",
+        "showWhen": {
+          "rules": [
+            {
+              "field": "showFixedSize",
+              "equals": false
+            }
+          ]
+        }
+      }
+    ]
+  }
+]

@@ -1,0 +1,46 @@
+{
+  "semantics": [
+    {
+      "label": "Text 1",
+      "default": "",
+      "description": "Text vor der Konstruktion."
+    },
+    {
+      "label": "Konstruktion",
+      "description": "JavaScript oder JessieCode Quellcode der Konstruktion."
+    },
+    {
+      "label": "Text 2",
+      "description": "Text nach der Konstruktion."
+    },
+    {
+      "label": "Erweiterte Einstellungen",
+      "fields": [
+        {
+          "label": "Board Id",
+          "description": "Id des JSXGraph containers. Falls leer (Standard), wird die Konstante BOARDID im JavaScript Quellcode erwartet."
+        },
+        {
+          "label": "Feste Größe",
+          "description": "Setze des JSXGraph containers auf feste Höhe und Breite."
+        },
+        {
+          "label": "Breite",
+          "description": "Breite des JSXGraph containers in einer beliebigen CSS-Einheit."
+        },
+        {
+          "label": "Höhe",
+          "description": "Höhe des JSXGraph containers in einer beliebigen CSS-Einheit."
+        },
+        {
+          "label": "Max-width",
+          "description": "Max-width des JSXGraph containers."
+        },
+        {
+          "label": "Aspect ratio",
+          "description": "Aspect ratio des JSXGraph containers."
+        }
+      ]
+    }
+  ]
+}
