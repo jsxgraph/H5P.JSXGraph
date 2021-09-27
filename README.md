@@ -27,7 +27,7 @@ Have a look at [www.jsxgraph.org](https://jsxgraph.org/).
        });
    ```
 
-   [picture](img/screenshot.png)
+   ![screenshot](img/screenshot.png)
 
 ## License
 
