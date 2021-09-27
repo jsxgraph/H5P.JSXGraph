@@ -1,69 +1,24 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 225">
-  <defs>
-    <style>
-      .cls-1 {
-        isolation: isolate;
-      }
-
-      .cls-2 {
-        fill: #e66d7e;
-      }
-
-      .cls-3 {
-        fill: #62a6ef;
-      }
-
-      .cls-4 {
-        fill: #23c596;
-      }
-
-      .cls-5 {
-        fill: #f7cf5c;
-      }
-
-      .cls-6 {
-        fill: #3d6084;
-      }
-
-      .cls-7 {
-        opacity: 0.1;
-        mix-blend-mode: multiply;
-      }
-
-      .cls-8 {
-        fill: none;
-      }
-    </style>
-  </defs>
-  <title>chart</title>
-  <g class="cls-1">
-    <g id="Layer_2" data-name="Layer 2">
-      <g id="chart">
-        <g>
-          <g>
-            <rect class="cls-2" x="215.64" y="95.81" width="22" height="82.31"/>
-            <rect class="cls-3" x="182.19" y="110.3" width="22" height="67.82"/>
-            <rect class="cls-4" x="282.55" y="110.3" width="22" height="67.82"/>
-            <rect class="cls-5" x="249.1" y="71.66" width="22" height="106.46"/>
-            <polygon class="cls-6" points="174 185.5 174 70.5 165 70.5 165 194.5 173.6 194.5 305 194.5 305 185.5 174 185.5"/>
-          </g>
-          <g>
-            <g class="cls-7">
-              <path d="M165.39,93.81V34.94a59,59,0,0,1,41.54,17.32h0Z"/>
-              <path d="M165.39,34.94V93.81l-.29.29-41.83,41.83h0a59.17,59.17,0,0,1,41.84-101Z"/>
-              <path d="M165.39,93.81l41.53-41.54h0a59.2,59.2,0,0,1,0,83.68h0L165.1,94.09Z"/>
-              <path d="M206.93,135.93a59.19,59.19,0,0,1-83.67,0h0L165.1,94.09l41.82,41.83Z"/>
-            </g>
-            <g>
-              <path class="cls-5" d="M162.64,91.06V32.19a59,59,0,0,1,41.54,17.32h0Z"/>
-              <path class="cls-3" d="M162.64,32.19V91.06l-.29.29-41.83,41.83h0a59.17,59.17,0,0,1,41.84-101Z"/>
-              <path class="cls-4" d="M162.64,91.06l41.53-41.54h0a59.2,59.2,0,0,1,0,83.68h0L162.35,91.34Z"/>
-              <path class="cls-2" d="M204.18,133.18a59.19,59.19,0,0,1-83.67,0h0l41.83-41.83,41.82,41.83Z"/>
-            </g>
-          </g>
-        </g>
-        <rect class="cls-8" width="400" height="225"/>
-      </g>
-    </g>
-  </g>
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 25.4.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Ebene_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="150 350 310 160" style="enable-background:new 150 350 310 160;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#1D71B8;}
+	.st1{fill:none;}
+</style>
+<g>
+	<g>
+		<path class="st0" d="M244.49,449.29c7.83,0,14.17-6.35,14.17-14.17V392.6h-14.17l0,42.52h-7.09c-7.83,0-14.17,6.35-14.17,14.17"/>
+		<g>
+			<path class="st0" d="M357.87,406.77v14.17c0,7.83,6.35,14.17,14.17,14.17V392.6H343.7c-7.83,0-14.17,6.35-14.17,14.17v28.35h0
+				c0,7.83,6.35,14.17,14.17,14.17h14.17v14.17h-7.09c-7.83,0-14.17,6.35-14.17,14.17h21.26c7.83,0,14.17-6.35,14.17-14.17v-14.17
+				c0-7.83-6.35-14.17-14.17-14.17H343.7l0-28.35"/>
+			<path class="st0" d="M350.79,399.69"/>
+		</g>
+		<path class="st0" d="M287.01,449.29v-21.26h14.17v21.26h14.17v-14.17c0-7.83-6.35-14.17-14.17-14.17v0
+			c7.83,0,14.17-6.35,14.17-14.17V392.6h-14.17v21.26h-14.17V392.6h-14.17v14.17c0,7.83,6.35,14.17,14.17,14.17
+			c-7.83,0-14.17,6.35-14.17,14.17l0,14.17"/>
+	</g>
+	<rect x="213.23" y="336.54" class="st1" width="168.81" height="168.81"/>
+</g>
 </svg>
