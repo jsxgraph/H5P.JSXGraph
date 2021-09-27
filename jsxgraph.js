@@ -18,7 +18,7 @@ H5P.JSXGraph = (function ($) {
       commentPre: 'BEFORE',
       commentPost: 'AFTER',
       advanced: {
-        boardId: '',
+        divId: '',
         showFixedSize: true,
         width: '500px',
         height: '500px',
@@ -38,33 +38,59 @@ H5P.JSXGraph = (function ($) {
    * @param {jQuery} $container
    */
   C.prototype.attach = function ($container) {
-    var boardId = 'jxg' + Math.random(),
+    var outerPre, outerPost, divId,
       composeCSS = function (options) {
-        var txt = '';
+        var txt = '',
+            res, w, h;
         if (options.advanced.showFixedSize) {
           txt += 'width:' + options.advanced.width + '; ';
           txt += 'height:' + options.advanced.height + '; ';
         }
         else {
-          txt += 'max-width:' + options.advanced.maxWidth + '; ';
-          txt += 'aspect-ratio:' + options.advanced.aspectRatio + '; ';
+          // Use the new CSS property aspect-ratio.
+          //txt += 'max-width:' + options.advanced.maxWidth + '; ';
+          // txt += 'aspect-ratio:' + options.advanced.aspectRatio + '; ';
+          // txt += 'margin: 0 auto;';
+
+          // Use the old aspect-ratio hack.
+          res = options.advanced.aspectRatio.match(/\w*(\d+)\w*\/\w*(\d+)\w*/);
+          w = parseFloat(res[1]);
+          h = parseFloat(res[2]);
+          txt += 'height:0; padding-bottom:' + (100*h/w) + '%;'
         }
+
         return txt;
       };
 
-    if (this.options.boardId !== '') {
-      boardId = this.options.boardId;
+    if (this.options.divId !== undefined && this.options.divId !== '') {
+      // Take the supplied div Id.
+      divId = this.options.divId;
+    }
+    else {
+      // Choose random div Id.
+      divId = 'jxg' + Math.random();
     }
 
     // Set class on container to identify it as a JSXGraph construction.
     $container.addClass("h5p-jsxgraph");
     $container.append('<div id="pre" class="h5p-jsxgraph-comment-post">' + this.options.commentPre + '</div>');
-    composeCSS(this.options);
-    $container.append('<div id="' + boardId + '" class="jxgbox" ' +
+
+    if (!this.options.advanced.showFixedSize) {
+        // Use the old aspect-ratio hack
+        outerPre = '<div style="max-width:' + this.options.advanced.maxWidth + ';';
+        outerPre += 'margin: 0 auto;';
+        outerPre += '">'
+        outerPost = '</div>';
+    }
+    else {
+        outerPre = '';
+        outerPost = '';
+    }
+    $container.append(outerPre + '<div id="' + divId + '" class="jxgbox" ' +
       'style="' + composeCSS(this.options) + '"' +
-      '></div>' +
+      '></div>' + outerPost +
       '<script type="text/javascript">' +
-      depurify(this.options.code).replace(/BOARDID/g, "'" + boardId + "'") +
+      depurify(this.options.code).replace(/BOARDID/g, "'" + divId + "'") +
       '</script>');
     $container.append('<div id="post" class="h5p-jsxgraph-comment-post">' + this.options.commentPost + '</div>');
   };

@@ -61,7 +61,7 @@
     "fields": [
       {
         "label": "Board Id",
-        "name": "boardId",
+        "name": "divId",
         "type": "text",
         "default": "",
         "optional": true,
