@@ -21,8 +21,14 @@ Have a look at [www.jsxgraph.org](https://jsxgraph.org/).
 
    ```html
        var board = JXG.JSXGraph.initBoard(BOARDID, {boundingbox:[-5,5,5,-5], axis:true});
-       var p = board.create('point', [1,2]);
+       var pol = board.create('polygon', [[-3,-3], [3,-3], [1,4]], {
+         fillColor: 'yellow',
+         vertices: {color: 'blue'}
+       });
    ```
+
+   [picture](img/screenshot.png)
+
 ## License
 
 MIT License
