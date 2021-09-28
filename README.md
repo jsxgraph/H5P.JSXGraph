@@ -1,6 +1,4 @@
 # H5P.JSXGraph
-[![ITEMS](img/items_logo_blue.png)](https://itemspro.eu)
-[![Cofunded by the Erasmus+ programme of the European union](img/eu_flag_co_funded_pos_rgb_left_small.jpg)](https://ec.europa.eu/programmes/erasmus-plus/)
 
 H5P content type to include **JSXGraph**.
 
@@ -36,3 +34,5 @@ Have a look at [www.jsxgraph.org](https://jsxgraph.org/).
 
 MIT License
 
+[![ITEMS](img/items_logo_blue.png)](https://itemspro.eu)
+[![Cofunded by the Erasmus+ programme of the European union](img/eu_flag_co_funded_pos_rgb_left_small.jpg)](https://ec.europa.eu/programmes/erasmus-plus/)
