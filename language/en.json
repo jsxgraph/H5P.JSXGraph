@@ -7,7 +7,6 @@
     },
     {
       "label": "Construction",
-      "default": "var board = JXG.JSXGraph.initBoard(BOARDID, {\n  boundingbox: [-5,5,5,-5], axis: true});\nvar pol = board.create('polygon', [[-3,-3], [3,-3], [1,4]], {\n  fillColor: 'yellow',\n  vertices: {color: 'blue'}\n});",
       "description": "JavaScript or JessieCode code for the construction"
     },
     {
@@ -20,7 +19,6 @@
       "fields": [
         {
           "label": "Board Id",
-          "default": "",
           "description": "Id of the JSXGraph container. If empty (which is the default) use the constant BOARDID in the JavaScript code."
         },
         {
@@ -29,22 +27,18 @@
         },
         {
           "label": "Width",
-          "default": "500px",
           "description": "Width of JSXGraph container, use any CSS unit."
         },
         {
           "label": "Height",
-          "default": "500px",
           "description": "Height of JSXGraph container, use any CSS unit."
         },
         {
           "label": "Max-width",
-          "default": "100%",
           "description": "Max-width of JSXGraph container."
         },
         {
           "label": "Aspect ratio",
-          "default": "2/1",
           "description": "Aspect ratio of JSXGraph container."
         }
       ]

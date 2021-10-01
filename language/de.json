@@ -11,6 +11,7 @@
     },
     {
       "label": "Text 2",
+      "default": "",
       "description": "Text nach der Konstruktion."
     },
     {

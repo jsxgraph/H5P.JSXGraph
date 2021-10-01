@@ -131,7 +131,7 @@
         "name": "aspectRatio",
         "type": "text",
         "optional": true,
-        "default": "2/1",
+        "default": "1/1",
         "description": "Aspect ratio of JSXGraph container.",
         "widget": "showWhen",
         "showWhen": {
