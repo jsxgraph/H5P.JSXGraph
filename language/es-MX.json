@@ -1,0 +1,45 @@
+{
+  "semantics": [
+    {
+      "description": "Texto antes de la construcción.",
+      "label": "Texto1"
+    },
+    {
+      "description": "JavaScript o JessieCode para la construcción",
+      "label": "Construcción"
+    },
+    {
+      "description": "Texto después de la construcción.",
+      "label": "Texto2"
+    },
+    {
+      "fields": [
+        {
+          "description": "Id del contenedor JSXGraph. Si estuviera vacío (predeterminado) usar la constante BOARDID en el código JavaScript.",
+          "label": "ID del tablero"
+        },
+        {
+          "description": "Configurar contenedor JSXGraph a ancho y altura fijos",
+          "label": "Tamaño fijo"
+        },
+        {
+          "description": "Ancho del contenedor JSXGraph, usar cualquier unidad CSS.",
+          "label": "Ancho"
+        },
+        {
+          "description": "Altura del contenedor JSXGraph, usar cualquier unidad CSS.",
+          "label": "Altura"
+        },
+        {
+          "description": "Ancho-máximo del contenedor JSXGraph.",
+          "label": "Ancho-máx"
+        },
+        {
+          "description": "Proporción de aspecto del contenedor JSXGraph.",
+          "label": "Proporción de aspecto"
+        }
+      ],
+      "label": "Configuraciones avanzadas"
+    }
+  ]
+}
