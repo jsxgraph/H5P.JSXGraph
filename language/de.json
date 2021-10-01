@@ -2,16 +2,14 @@
   "semantics": [
     {
       "label": "Text 1",
-      "default": "",
       "description": "Text vor der Konstruktion."
     },
     {
       "label": "Konstruktion",
-      "description": "JavaScript oder JessieCode Quellcode der Konstruktion."
+      "description": "JavaScript- oder JessieCode-Quellcode der Konstruktion."
     },
     {
       "label": "Text 2",
-      "default": "",
       "description": "Text nach der Konstruktion."
     },
     {
@@ -19,27 +17,27 @@
       "fields": [
         {
           "label": "Board Id",
-          "description": "Id des JSXGraph containers. Falls leer (Standard), wird die Konstante BOARDID im JavaScript Quellcode erwartet."
+          "description": "Id des JSXGraph-Containers. Falls leer (Standard), wird die Konstante BOARDID im JavaScript Quellcode erwartet."
         },
         {
           "label": "Feste Größe",
-          "description": "Setze des JSXGraph containers auf feste Höhe und Breite."
+          "description": "Setzt den JSXGraph-Container auf feste Höhe und Breite."
         },
         {
           "label": "Breite",
-          "description": "Breite des JSXGraph containers in einer beliebigen CSS-Einheit."
+          "description": "Breite des JSXGraph-Containers in einer beliebigen CSS-Einheit."
         },
         {
           "label": "Höhe",
-          "description": "Höhe des JSXGraph containers in einer beliebigen CSS-Einheit."
+          "description": "Höhe des JSXGraph-Containers in einer beliebigen CSS-Einheit."
         },
         {
           "label": "Max-width",
-          "description": "Max-width des JSXGraph containers."
+          "description": "Max-width des JSXGraph-Containers."
         },
         {
-          "label": "Aspect ratio",
-          "description": "Aspect ratio des JSXGraph containers."
+          "label": "Seitenverhältnis",
+          "description": "Seitenverhältnis des JSXGraph-Containers."
         }
       ]
     }
