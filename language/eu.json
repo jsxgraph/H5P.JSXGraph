@@ -1,1 +1,10 @@
-{}
+{
+  "semantics": [
+    {
+      "label": "Testua 1"
+    },
+    {
+      "label": "Eraikuntza"
+    }
+  ]
+}
