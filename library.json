@@ -9,12 +9,8 @@
   "author": "A. Wassermann",
   "license": "MIT",
   "machineName": "H5P.JSXGraph",
-  "coreApi": {
-    "majorVersion": 1,
-    "minorVersion": 3
-  },
   "embedTypes": [
-    "iframe"
+    "div"
   ],
   "preloadedCss": [
     {
