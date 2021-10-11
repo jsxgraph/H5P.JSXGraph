@@ -144,7 +144,7 @@ H5P.JSXGraph = (function ($) {
     $iframe.css({ width: '100%', height: this.options.advanced.height});
     // var node = document.getElementById('xxx'); //contentWindow.document.getElementsByTagName('body').item(0);
     // var h = node.contentWindow.document.body.scrollHeight;
-    // console.log(node.contentWindow.document.body);
+    // console.log(node.contentWindow.document.getElementsByTagName('body').item(0));
 
     //console.log(H5P.getLibraryConfig('H5P.JSXGraph'));
     //console.log(H5P.getContent());
