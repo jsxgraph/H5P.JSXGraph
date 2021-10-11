@@ -19,7 +19,7 @@ H5P.JSXGraph = (function ($) {
     // Extend defaults with provided options
 
     this.options = $.extend(true, {}, {
-      resizeSupported: true,
+      resizeSupported: true, // Unused?
       commentPre: 'BEFORE',
       commentPost: 'AFTER',
       advanced: {
@@ -45,7 +45,9 @@ H5P.JSXGraph = (function ($) {
    */
   C.prototype.attach = function ($container) {
     var outerPre, outerPost, divId,
+      csp, libPath, headTxt, bodyTxt, secureJS, doc,
       options = this.options,
+
       composeCSSForJXG = function (options) {
         var txt = '',
           res, w, h;
@@ -92,9 +94,10 @@ H5P.JSXGraph = (function ($) {
     }
     $container.addClass("h5p-jsxgraph");
 
-    var headTxt = '<head><meta http-equiv="Content-Security-Policy" content="navigate-to \'none\'">';
+    csp = 'navigate-to \'none\'; connect-src \'none\'; worker-src \'none\'; script-src \'unsafe-inline\' \'self\';';
+    headTxt = '<head><meta http-equiv="Content-Security-Policy" content="' + csp + '">';
 
-    var path = "/sites/default/files/h5p/development/H5P.JSXGraph/"
+    libPath = "/sites/default/files/h5p/development/H5P.JSXGraph/"
     headTxt +=
       // '<script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>' +
       // '<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js"></script>' +
@@ -103,7 +106,8 @@ H5P.JSXGraph = (function ($) {
       '<link rel="stylesheet" href="' + path + 'h5p-jsxgraph.css" type="text/css">' +
       '<link rel="stylesheet" href="' + path + 'jsxgraph.css" type="text/css">';
 
-    var secureJS = '<script type="text/javascript">' +
+    // Atlernative to CSP connect-src
+    secureJS = '<script type="text/javascript">' +
       'XMLHttpRequest = {};' +
       'WebSocket = {};' +
       '</script>';
@@ -111,7 +115,7 @@ H5P.JSXGraph = (function ($) {
     headTxt += secureJS;
     headTxt += '</head>';
 
-    var bodyTxt = '<body>' +
+    bodyTxt = '<body>' +
       '<div id="pre" class="h5p-jsxgraph-comment-post">' + options.commentPre + '</div>' +
       outerPre +
       '<div id="' + divId + '" class="jxgbox" ' +
@@ -134,7 +138,7 @@ H5P.JSXGraph = (function ($) {
 
     $container.html('');
     $container.append($iframe);
-    var doc = $iframe.contents()[0];
+    doc = $iframe.contents()[0];
 
     doc.open('text/html', 'replace');
     doc.write(headTxt);
