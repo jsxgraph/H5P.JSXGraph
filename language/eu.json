@@ -1,10 +1,45 @@
 {
   "semantics": [
     {
-      "label": "Testua 1"
+      "label": "Testua 1",
+      "description": "Eraikuntzaren aurreko testua."
     },
     {
-      "label": "Eraikuntza"
+      "label": "Eraikuntza",
+      "description": "Eraikuntzarentzako JavaScript edo JessieCode kodea"
+    },
+    {
+      "description": "Eraikuntzaren ondorengoko testua.",
+      "label": "Testua 2"
+    },
+    {
+      "label": "Ezarpen aurreratuak",
+      "fields": [
+        {
+          "label": "Arbelaren IDa",
+          "description": "JSXGraph edukiontziaren IDa. Hutsik badago (hori da lehenetsitakoa) JavaScript kodean BOARDID konstantea erabili ezazu."
+        },
+        {
+          "label": "Tamaina finkoa",
+          "description": "Konfiguratu JSXGraph edukiontzia zabalera eta altuera finkoak izan ditzan"
+        },
+        {
+          "label": "Zabalera",
+          "description": "JSXGraph edukiontziaren zabalera, edozein CSS unitate erabili dezakezu."
+        },
+        {
+          "label": "Altuera",
+          "description": "JSXGraph edukiontziaren altuera, edozein CSS unitate erabili dezakezu."
+        },
+        {
+          "label": "Gehienezko zabalera",
+          "description": "JSXGraph edukiontziaren gehienezko zabalera."
+        },
+        {
+          "label": "Itxuraren ratioa",
+          "description": "JSXGraph edukiontziaren itxuraren ratioa."
+        }
+      ]
     }
   ]
 }
