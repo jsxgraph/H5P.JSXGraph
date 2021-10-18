@@ -211,7 +211,7 @@ H5P.JSXGraph = (function ($) {
     }
     else {
       // Generate iframe from scratch
-      $iframe = $('<iframe id="xxx" src="about:blank" scrolling="no" frameborder="0"' + sandbox +  'class="h5p-iframe-content h5p-iframe-wrapper" />');
+      $iframe = $('<iframe src="about:blank" scrolling="no" frameborder="0"' + sandbox +  'class="h5p-iframe-content h5p-iframe-wrapper" />');
 
       $container.html('');
       $container.append($iframe);
