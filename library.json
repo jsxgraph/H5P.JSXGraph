@@ -3,7 +3,7 @@
   "description": "Create interactive mathematics",
   "majorVersion": 1,
   "minorVersion": 0,
-  "patchVersion": 0,
+  "patchVersion": 1,
   "runnable": 1,
   "fullscreen": 1,
   "author": "A. Wassermann",
@@ -15,24 +15,11 @@
   "preloadedCss": [
     {
       "path": "h5p-jsxgraph.css"
-    },
-    {
-      "path": "jsxgraph.css"
     }
   ],
   "preloadedJs": [
     {
       "path": "jsxgraph.js"
-    },
-    {
-      "path": "jsxgraphcore.js"
-    }
-  ],
-  "editorDependencies": [
-    {
-      "machineName": "H5PEditor.ShowWhen",
-      "majorVersion": 1,
-      "minorVersion": 0
     }
   ]
 }

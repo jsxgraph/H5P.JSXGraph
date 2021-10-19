@@ -12,10 +12,19 @@ H5P.JSXGraph = (function ($) {
       replace(/&amp;/g, '&');
   };
 
+  /**
+   * Remove unwanted code
+   *
+   * @param {String} str
+   * @returns {String} purified string
+   */
   var cleanupJS = function(str) {
-    return str.replace(/document\.write/g, '').
+    return str.
+      replace(/document\.write/g, '').
       replace(/<script.*<\/script>/g, '').
-      replace(/<link.*>/g, '');
+      replace(/<link.*>/g, '').
+      replace(/new Function\(/g, '').
+      replace(/\s+eval\(/g, '');
   };
 
   /**
@@ -26,7 +35,8 @@ H5P.JSXGraph = (function ($) {
   var getCSSForJXG = function (options) {
     var txt = '',
       res, w, h;
-    if (options.advanced.showFixedSize) {
+
+    if (false /*options.advanced.showFixedSize*/) {
       txt += 'width:' + options.advanced.width + '; ';
       txt += 'height:' + options.advanced.height + '; ';
     }
@@ -68,11 +78,17 @@ H5P.JSXGraph = (function ($) {
     return headTxt;
   };
 
+  /**
+   * Build string consisting of the body of the iframe.
+   * @param {String} divId
+   * @param {Object} options
+   * @returns
+   */
   var getBody = function(divId, options) {
     var bodyTxt, outerPre, outerPost;
 
     // Set class on container to identify it as a JSXGraph construction.
-    if (!options.advanced.showFixedSize) {
+    if (true /*!options.advanced.showFixedSize*/) {
       // Use the old aspect-ratio hack
       outerPre = '<div style="max-width:' + options.advanced.maxWidth + ';';
       outerPre += 'margin: 0 auto;';
@@ -126,9 +142,9 @@ H5P.JSXGraph = (function ($) {
       commentPost: 'AFTER',
       advanced: {
         divId: '',
-        showFixedSize: true,
+        // showFixedSize: true,
         width: '500px',
-        height: '500px',
+        height: '900px',
         maxWidth: '100%',
         aspectRatio: '1/1'
       },
@@ -184,6 +200,7 @@ H5P.JSXGraph = (function ($) {
     secureJS = '<script type="text/javascript">' +
      'XMLHttpRequest = {};' +
      'WebSocket = {};' +
+     'document.write = function() {};' + // It seems better to disable it instead of removing it from the code as above
      '</script>';
 
     /**
@@ -210,8 +227,8 @@ H5P.JSXGraph = (function ($) {
       $container.append(getHead(libPath, csp, secureJS) + getBody(divId, options));
     }
     else {
-      // Generate iframe from scratch
-      $iframe = $('<iframe src="about:blank" scrolling="no" frameborder="0"' + sandbox +  'class="h5p-iframe-content h5p-iframe-wrapper" />');
+      // Create iframe from scratch
+      $iframe = $('<iframe id="xyx" src="about:blank" scrolling="auto" frameborder="0"' + sandbox +  'class="h5p-iframe-content h5p-iframe-wrapper" />');
 
       $container.html('');
       $container.append($iframe);

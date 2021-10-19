@@ -55,8 +55,8 @@
   },
   {
     "name": "advanced",
-    "type": "group",
     "label": "Advanced settings",
+    "type": "group",
     "importance": "medium",
     "fields": [
       {
@@ -68,46 +68,20 @@
         "description": "Id of the JSXGraph container. If empty (which is the default) use the constant BOARDID in the JavaScript code."
       },
       {
-        "name": "showFixedSize",
-        "type": "boolean",
-        "label": "Fixed size",
-        "description": "Set JSXGraph container to fixed width and height",
-        "importance": "low",
-        "default": false
-      },
-      {
         "label": "Width",
         "name": "width",
         "type": "text",
-        "default": "500px",
+        "default": "100%",
         "optional": true,
-        "description": "Width of JSXGraph container, use any CSS unit.",
-        "widget": "showWhen",
-        "showWhen": {
-          "rules": [
-            {
-              "field": "showFixedSize",
-              "equals": true
-            }
-          ]
-        }
+        "description": "Width of JSXGraph container, use any CSS unit."
       },
       {
         "label": "Height",
         "name": "height",
         "type": "text",
-        "default": "500px",
+        "default": "900px",
         "optional": true,
-        "description": "Height of JSXGraph container, use any CSS unit.",
-        "widget": "showWhen",
-        "showWhen": {
-          "rules": [
-            {
-              "field": "showFixedSize",
-              "equals": true
-            }
-          ]
-        }
+        "description": "Height of JSXGraph container, use any CSS unit."
       },
       {
         "label": "Max-width",
@@ -115,16 +89,7 @@
         "type": "text",
         "default": "100%",
         "optional": true,
-        "description": "Max-width of JSXGraph container.",
-        "widget": "showWhen",
-        "showWhen": {
-          "rules": [
-            {
-              "field": "showFixedSize",
-              "equals": false
-            }
-          ]
-        }
+        "description": "Max-width of JSXGraph construction."
       },
       {
         "label": "Aspect ratio",
@@ -132,16 +97,7 @@
         "type": "text",
         "optional": true,
         "default": "1/1",
-        "description": "Aspect ratio of JSXGraph container.",
-        "widget": "showWhen",
-        "showWhen": {
-          "rules": [
-            {
-              "field": "showFixedSize",
-              "equals": false
-            }
-          ]
-        }
+        "description": "Aspect ratio of JSXGraph construction."
       }
     ]
   }
