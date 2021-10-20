@@ -212,6 +212,9 @@ H5P.JSXGraph = (function ($) {
 
     /**
      * Attribute sandbox for the iframe.
+     * See https://cloud.google.com/blog/products/data-analytics/iframe-sandbox-tutorial,
+     * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/iframe
+     *
      * Allowed are:
      *   allow-same-origin	Allows the iframe content to be treated as being from the same origin
      *   allow-scripts	Allows to run scripts
