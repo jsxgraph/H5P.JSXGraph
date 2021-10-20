@@ -20,10 +20,6 @@
           "description": "Id des JSXGraph-Containers. Falls leer (Standard), wird die Konstante BOARDID im JavaScript Quellcode erwartet."
         },
         {
-          "label": "Feste Größe",
-          "description": "Setzt den JSXGraph-Container auf feste Höhe und Breite."
-        },
-        {
           "label": "Breite",
           "description": "Breite des JSXGraph-Containers in einer beliebigen CSS-Einheit."
         },
@@ -33,11 +29,11 @@
         },
         {
           "label": "Max-width",
-          "description": "Max-width des JSXGraph-Containers."
+          "description": "Max-width der JSXGraph-Konstruktion."
         },
         {
           "label": "Seitenverhältnis",
-          "description": "Seitenverhältnis des JSXGraph-Containers."
+          "description": "Seitenverhältnis der JSXGraph-Konstruktion."
         }
       ]
     }

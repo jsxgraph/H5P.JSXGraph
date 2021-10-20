@@ -19,10 +19,6 @@
           "label": "ID del tablero"
         },
         {
-          "description": "Configurar contenedor JSXGraph a ancho y altura fijos",
-          "label": "Tamaño fijo"
-        },
-        {
           "description": "Ancho del contenedor JSXGraph, usar cualquier unidad CSS.",
           "label": "Ancho"
         },

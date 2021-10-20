@@ -22,10 +22,6 @@
           "description": "Id of the JSXGraph container. If empty (which is the default) use the constant BOARDID in the JavaScript code."
         },
         {
-          "label": "Fixed size",
-          "description": "Set JSXGraph container to fixed width and height"
-        },
-        {
           "label": "Width",
           "description": "Width of JSXGraph container, use any CSS unit."
         },
@@ -35,11 +31,11 @@
         },
         {
           "label": "Max-width",
-          "description": "Max-width of JSXGraph container."
+          "description": "Max-width of JSXGraph construction."
         },
         {
           "label": "Aspect ratio",
-          "description": "Aspect ratio of JSXGraph container."
+          "description": "Aspect ratio of JSXGraph construction."
         }
       ]
     }
