@@ -1,5 +1,10 @@
 .h5pignore
 .git
+.gitignore
+node_modules
 img
-README.md
 test
+dev
+README.md
+package.json
+package-lock.json

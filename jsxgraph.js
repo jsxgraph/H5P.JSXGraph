@@ -3,6 +3,7 @@ var H5P = H5P || {};
 H5P.JSXGraph = (function ($) {
   //   var $ = H5P.jQuery;
   //   this.$ = $(this);
+  var useMathJax = true;
 
   var depurify = function (str) {
     return str.replace(/&#039;/g, "'").
@@ -67,6 +68,11 @@ H5P.JSXGraph = (function ($) {
     /**
      * Add JavaScript libraries and CSS files to the iFrame
      */
+    if (useMathJax) {
+        headTxt +=
+        '<script src="' + libPath + '3rdparty/mathjax/es5/tex-chtml.js" type="text/javascript"></script>';
+    }
+
     headTxt +=
       '<script src="' + libPath + 'jsxgraphcore.js" type="text/javascript"></script>' +
       '<link rel="stylesheet" href="' + libPath + 'h5p-jsxgraph.css" type="text/css">' +
@@ -228,7 +234,7 @@ H5P.JSXGraph = (function ($) {
     }
     else {
       // Create iframe from scratch
-      $iframe = $('<iframe id="xyx" src="about:blank" scrolling="auto" frameborder="0"' + sandbox +  'class="h5p-iframe-content h5p-iframe-wrapper" />');
+      $iframe = $('<iframe src="about:blank" scrolling="auto" frameborder="0"' + sandbox +  'class="h5p-iframe-content h5p-iframe-wrapper" />');
 
       $container.html('');
       $container.append($iframe);
