@@ -184,7 +184,9 @@ H5P.JSXGraph = (function ($) {
     }
 
     // libPath = "/sites/default/files/h5p/development/H5P.JSXGraph/";
-    libPath = H5P.getLibraryPath('H5P.JSXGraph').replace('libraries', 'development') + '/';
+    libPath = H5P.getLibraryPath('H5P.JSXGraph');
+    // libPath = libPath.replace('libraries', 'development');
+    libPath += '/';
 
     /**
      * Security: Add Content-Security-Policy to the head of the iframe
