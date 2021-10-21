@@ -19,11 +19,19 @@ H5P.JSXGraph = (function ($) {
    * @param {String} str
    * @returns {String} purified string
    */
-  var cleanupJS = function(str) {
+  var sanitizeJS = function(str) {
     return str.
+      replace(/<script.*<\/script>/ig, '').
+      replace(/<embed.*>/ig, '').
+      replace(/<iframe.*>/ig, '').
+      replace(/<link.*>/ig, '').
+      replace(/<object.*>/ig, '').
+      replace(/onclick/ig, '').
+      replace(/javascript:/ig, '').
+      replace(/document\.cookie/g, '').
       replace(/document\.write/g, '').
-      replace(/<script.*<\/script>/g, '').
-      replace(/<link.*>/g, '').
+      replace(/charAt\(/g, '').
+      replace(/fromCharCode\(/g, '').
       replace(/new Function\(/g, '').
       replace(/\s+eval\(/g, '');
   };
@@ -122,7 +130,7 @@ H5P.JSXGraph = (function ($) {
 
       // JavaScript code
       '<script type="text/javascript">' +
-        cleanupJS(depurify(options.code).replace(/BOARDID/g, "'" + divId + "'")) +
+        sanitizeJS(depurify(options.code).replace(/BOARDID/g, "'" + divId + "'")) +
       '</script>' +
 
       // Second text field
