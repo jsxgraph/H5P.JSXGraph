@@ -204,8 +204,16 @@ H5P.JSXGraph = (function ($) {
      */
     csp = 'navigate-to \'none\'; ' +
           'connect-src \'none\'; ' +
-          'worker-src \'none\'; '  +
-          'script-src \'unsafe-inline\' \'self\';';
+          'prefetch-src  \'none\'; ' +
+          'worker-src  \'none\'; ' +
+          'font-src    \'self\'; ' +
+          'img-src     \'self\'; ' +
+          'default-src \'self\'; ' +
+          'style-src   \'unsafe-inline\' \'self\' ;' +
+          'object-src  \'none\'; ' +
+          'form-action \'none\'; ' +
+          'frame-src   \'self\'; ' +
+          'script-src  \'unsafe-inline\' \'self\';';
 
     /**
      * Additional security measure:
