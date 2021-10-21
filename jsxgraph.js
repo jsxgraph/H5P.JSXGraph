@@ -36,6 +36,12 @@ H5P.JSXGraph = (function ($) {
       replace(/\s+eval\(/g, '');
   };
 
+//   var jsEscape = function (str) {
+//     return String(str).replace(/[^\w. ]/gi, function(c){
+//        return '\\u'+('0000'+c.charCodeAt(0).toString(16)).slice(-4);
+//     });
+//   };
+
   /**
    * CSS properties for the style attribute of the JSXGraph div.
    * @param  {Object} options
