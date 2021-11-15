@@ -20,24 +20,20 @@
           "description": "JSXGraph edukiontziaren IDa. Hutsik badago (hori da lehenetsitakoa) JavaScript kodean BOARDID konstantea erabili ezazu."
         },
         {
-          "label": "Tamaina finkoa",
-          "description": "Konfiguratu JSXGraph edukiontzia zabalera eta altuera finkoak izan ditzan"
-        },
-        {
           "label": "Zabalera",
-          "description": "JSXGraph edukiontziaren zabalera, edozein CSS unitate erabili dezakezu."
+          "description": "JSXGraph edukiontziaren zabalera, erabili edozein CSS unitate."
         },
         {
           "label": "Altuera",
-          "description": "JSXGraph edukiontziaren altuera, edozein CSS unitate erabili dezakezu."
+          "description": "JSXGraph edukiontziaren altuera, erabili edozein CSS unitate."
         },
         {
-          "label": "Gehienezko zabalera",
-          "description": "JSXGraph edukiontziaren gehienezko zabalera."
+          "label": "Gehienezko altuera",
+          "description": "JSXGraph eraikinaren gehienezko altuera."
         },
         {
-          "label": "Itxuraren ratioa",
-          "description": "JSXGraph edukiontziaren itxuraren ratioa."
+          "label": "Itxura-proportzioa",
+          "description": "JSXGraph eraikinaren itxura-proportzioa."
         }
       ]
     }
