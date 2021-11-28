@@ -1,0 +1,26 @@
+{
+  "semantics": [
+    {
+      "label": "Tekst 1"
+    },
+    {},
+    {
+      "label": "Tekst 2"
+    },
+    {
+      "label": "Uitgebreide instellingen",
+      "fields": [
+        {},
+        {
+          "label": "Breedte"
+        },
+        {
+          "label": "Hoogte"
+        },
+        {
+          "label": "Max. breedte"
+        }
+      ]
+    }
+  ]
+}
