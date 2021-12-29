@@ -28,7 +28,7 @@
           "description": "Höhe des JSXGraph-Containers in einer beliebigen CSS-Einheit."
         },
         {
-          "label": "Max-width",
+          "label": "Maximale Breite",
           "description": "Max-width der JSXGraph-Konstruktion."
         },
         {
