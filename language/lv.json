@@ -1,0 +1,41 @@
+{
+  "semantics": [
+    {
+      "description": "Teksts pirms konstrukcijas.",
+      "label": "1. teksts"
+    },
+    {
+      "label": "Konstrukcija",
+      "description": "JavaScript vai JessieCode kods konstrukcijai"
+    },
+    {
+      "label": "2. teksts",
+      "description": "Teksts pēc konstrukcijas."
+    },
+    {
+      "label": "Papildu iestatījumi",
+      "fields": [
+        {
+          "label": "Dēļa Id",
+          "description": "JSXGraph konteinera Id. Ja tukšs (pēc noklusējuma), JavaScript kodā izmantojiet konstanti BOARDID."
+        },
+        {
+          "label": "Platums",
+          "description": "JSXGraph konteinera platums. Izmantojiet jebkuru CSS vienību."
+        },
+        {
+          "label": "Augstums",
+          "description": "JSXGraph konteinera augstums. Izmantojiet jebkuru CSS vienību."
+        },
+        {
+          "label": "Maksimālais platums",
+          "description": "Maksimālais JSXGraph konstrukcijas platums."
+        },
+        {
+          "label": "Malu attiecība",
+          "description": "JSXGraph konstrukcijas malu attiecība."
+        }
+      ]
+    }
+  ]
+}
