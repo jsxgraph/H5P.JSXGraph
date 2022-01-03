@@ -2,14 +2,14 @@
   "semantics": [
     {
       "description": "Teksts pirms konstrukcijas.",
-      "label": "1. teksts"
+      "label": "1. teksts"
     },
     {
       "label": "Konstrukcija",
       "description": "JavaScript vai JessieCode kods konstrukcijai"
     },
     {
-      "label": "2. teksts",
+      "label": "2. teksts",
       "description": "Teksts pēc konstrukcijas."
     },
     {
