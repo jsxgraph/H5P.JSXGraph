@@ -1,41 +1,41 @@
 {
   "semantics": [
     {
-      "label": "Text 1",
-      "description": "Text before the construction."
+      "label": "టెక్స్ట్ 1",
+      "description": "కన్స్ట్రక్షన్ కు ముందు టెక్స్ట్."
     },
     {
-      "label": "Construction",
-      "description": "JavaScript or JessieCode code for the construction"
+      "label": "కన్స్ట్రక్షన్",
+      "description": "కన్స్ట్రక్షన్ కొరకై జావా స్క్రిప్ట్ లేదా జెస్సీకోడ్ కోడ్"
     },
     {
-      "label": "Text 2",
-      "description": "Text after the construction."
+      "label": "టెక్స్ట్ 2",
+      "description": "కన్స్ట్రక్షన్ తర్వాత టెక్స్ట్."
     },
     {
       "fields": [
         {
-          "label": "Board Id",
-          "description": "Id of the JSXGraph container. If empty (which is the default) use the constant BOARDID in the JavaScript code."
+          "label": "బోర్డ్ ఐడి",
+          "description": "JSXGraph కంటెయినర్ యొక్క Id. ఖాళీగా ఉంటే డిఫాల్ట్ గా ఖాళీగా ఉంటుంది) జావాస్క్రిప్ట్ కోడ్ లో constant BOARDID వాడండి."
         },
         {
-          "label": "Width",
-          "description": "Width of JSXGraph container, use any CSS unit."
+          "label": "వెడల్పు",
+          "description": "JSXGraph కంటెయినర్ యొక్క వెడల్పు , ఏదైనా CSS యూనిట్ వాడు."
         },
         {
-          "label": "Height",
-          "description": "Height of JSXGraph container, use any CSS unit."
+          "label": "ఎత్తు",
+          "description": "JSXGraph కంటెయినర్ యొక్క ఎత్తు, ఏదైనా CSS యూనిట్ వాడు."
         },
         {
-          "label": "Max-width",
-          "description": "Max-width of JSXGraph construction."
+          "label": "గరిష్ట వెడల్పు",
+          "description": "JSXGraph కన్స్ట్రక్షన్ యొక్క గరిష్ట వెడల్పు."
         },
         {
-          "label": "Aspect ratio",
-          "description": "Aspect ratio of JSXGraph construction."
+          "label": "ఏస్పెక్ట్ రేషియో",
+          "description": "JSXGraph కన్స్ట్రక్షన్ యొక్క ఏస్పెక్ట్ రేషియో."
         }
       ],
-      "label": "Advanced settings"
+      "label": "అడ్వాన్స్ డ్ సెట్టింగులు"
     }
   ]
 }
