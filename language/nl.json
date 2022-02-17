@@ -2,38 +2,38 @@
   "semantics": [
     {
       "label": "Tekst 1",
-      "description": "Text before the construction."
+      "description": "Tekst voorafgaand aan de bouw"
     },
     {
-      "label": "Construction",
-      "description": "JavaScript or JessieCode code for the construction"
+      "label": "De bouw",
+      "description": "JavaScript of JessieCode code nodig voor de bouw"
     },
     {
       "label": "Tekst 2",
-      "description": "Text after the construction."
+      "description": "De tekst na de bouw"
     },
     {
       "label": "Uitgebreide instellingen",
       "fields": [
         {
           "label": "Board Id",
-          "description": "Id of the JSXGraph container. If empty (which is the default) use the constant BOARDID in the JavaScript code."
+          "description": "De Id van de JSXGraph container. Indien leeg (hetgeen de standaardwaarde is) gebruik de constant BOARDID in de JavaScript code."
         },
         {
           "label": "Breedte",
-          "description": "Width of JSXGraph container, use any CSS unit."
+          "description": "De breedte van de JSXGraph container, gebruik elke CSS eenheid."
         },
         {
           "label": "Hoogte",
-          "description": "Height of JSXGraph container, use any CSS unit."
+          "description": "De hoogte van de JSXGraph container, gebruik elke CSS eenheid."
         },
         {
-          "label": "Max. breedte",
-          "description": "Max-width of JSXGraph construction."
+          "label": "Maximale breedte",
+          "description": "De maximale breedte van de JSXGraph constructie."
         },
         {
-          "label": "Aspect ratio",
-          "description": "Aspect ratio of JSXGraph construction."
+          "label": "Beeldverhouding",
+          "description": "De beeldverhouding van de JSXGraph constructie."
         }
       ]
     }
