@@ -1,0 +1,43 @@
+{
+  "semantics": [
+    {
+      "label": "Texto 1",
+      "description": "Texto antes da construção.",
+      "default": "."
+    },
+    {
+      "label": "Construção",
+      "description": "Código JavaScript ou JessieCode para a construção"
+    },
+    {
+      "label": "Texto 2",
+      "description": "Texto após a construção.",
+      "default": "."
+    },
+    {
+      "fields": [
+        {
+          "label": "Board ID",
+          "description": "Id do recipiente JSXGraph. Se estiver vazio (que é o padrão) use a constante BOARDID no código JavaScript."
+        },
+        {
+          "label": "Largura",
+          "description": "Largura do recipiente JSXGraph, use qualquer unidade CSS."
+        },
+        {
+          "label": "Altura",
+          "description": "Altura do recipiente JSXGraph, use qualquer unidade CSS."
+        },
+        {
+          "label": "Largura máxima",
+          "description": "Largura máxima da construção do JSXGraph."
+        },
+        {
+          "label": "Proporção de aspecto",
+          "description": "Proporção de aspecto da construção do JSXGraph."
+        }
+      ],
+      "label": "Configurações avançadas"
+    }
+  ]
+}
