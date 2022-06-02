@@ -2,38 +2,38 @@
   "semantics": [
     {
       "label": "Text 1",
-      "description": "Text before the construction."
+      "description": "Text před konstrukcí."
     },
     {
-      "label": "Construction",
-      "description": "JavaScript or JessieCode code for the construction"
+      "label": "Konstrukce",
+      "description": "JavaScript nebo kód JessieCode pro konstrukci"
     },
     {
       "label": "Text 2",
-      "description": "Text after the construction."
+      "description": "Text po konstrukci."
     },
     {
-      "label": "Advanced settings",
+      "label": "Pokročilé nastavení",
       "fields": [
         {
           "label": "Board Id",
           "description": "Id of the JSXGraph container. If empty (which is the default) use the constant BOARDID in the JavaScript code."
         },
         {
-          "label": "Width",
-          "description": "Width of JSXGraph container, use any CSS unit."
+          "label": "Šířka",
+          "description": "Šířka kontejneru JSXGraph, použijte libovolnou jednotku CSS."
         },
         {
-          "label": "Height",
-          "description": "Height of JSXGraph container, use any CSS unit."
+          "label": "Výška",
+          "description": "Výška kontejneru JSXGraph, použijte libovolnou jednotku CSS."
         },
         {
-          "label": "Max-width",
-          "description": "Max-width of JSXGraph construction."
+          "label": "Max-šířka",
+          "description": "Maximální šířka konstrukce JSXGraph."
         },
         {
-          "label": "Aspect ratio",
-          "description": "Aspect ratio of JSXGraph construction."
+          "label": "Poměr stran",
+          "description": "Poměr stran konstrukce JSXGraph."
         }
       ]
     }
