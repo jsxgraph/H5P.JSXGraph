@@ -1,0 +1,41 @@
+{
+  "semantics": [
+    {
+      "label": "Texto 1",
+      "description": "Texto antes da construción."
+    },
+    {
+      "label": "Construción",
+      "description": "Código JavaScript ou JessieCode para a construción"
+    },
+    {
+      "label": "Texto 2",
+      "description": "Texto despois da construción."
+    },
+    {
+      "label": "Configuración avanzada",
+      "fields": [
+        {
+          "label": "ID da táboa",
+          "description": "Id do contenedor JSXGraph. Se está baleiro (que é o predeterminado) usa a constante BOARDID no código JavaScript."
+        },
+        {
+          "label": "Anchura",
+          "description": "Anchura do contedor JSXGraph, usa calquera unidade CSS."
+        },
+        {
+          "label": "Altura",
+          "description": "Anchura do contedor JSXGraph, usa calquera unidade CSS."
+        },
+        {
+          "label": "Anchura máxima",
+          "description": "Anchura máxima da construción de JSXGraph."
+        },
+        {
+          "label": "Relación de aspecto",
+          "description": "Relación de aspecto da construción de JSXGraph."
+        }
+      ]
+    }
+  ]
+}
