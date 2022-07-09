@@ -1,41 +1,41 @@
 {
   "semantics": [
     {
-      "label": "Text 1",
-      "description": "Text before the construction."
+      "label": "Testo 1",
+      "description": "Text prima della costruzione."
     },
     {
-      "label": "Construction",
-      "description": "JavaScript or JessieCode code for the construction"
+      "label": "Costruzione",
+      "description": "Codice JavaScript o JessieCode per la costruzione"
     },
     {
-      "label": "Text 2",
-      "description": "Text after the construction."
+      "label": "Testo 2",
+      "description": "Text dopo la costruzione."
     },
     {
       "fields": [
         {
-          "description": "Id of the JSXGraph container. If empty (which is the default) use the constant BOARDID in the JavaScript code.",
-          "label": "Board Id"
+          "description": "ID del contenitore del JSXGraph. Se vuoto (default) usa la costante BOARDID nel codice JavaScript.",
+          "label": "ID della tabella"
         },
         {
-          "label": "Width",
-          "description": "Width of JSXGraph container, use any CSS unit."
+          "label": "Larghezza",
+          "description": "Larghezza del contenitore JSXGraph. Usa qualunque unità CSS."
         },
         {
-          "description": "Height of JSXGraph container, use any CSS unit.",
-          "label": "Height"
+          "description": "Altezza del contenitore JSXGraph. Usa qualunque unità CSS.",
+          "label": "Altezza"
         },
         {
-          "label": "Max-width",
-          "description": "Max-width of JSXGraph construction."
+          "label": "Larghezza massima",
+          "description": "Larghezza massima della costruzione JSXGraph."
         },
         {
-          "label": "Aspect ratio",
-          "description": "Aspect ratio of JSXGraph construction."
+          "label": "Proporzione dell'aspetto",
+          "description": "Proporzione dell'aspetto della costruzione JSXGraph."
         }
       ],
-      "label": "Advanced settings"
+      "label": "Impostazioni avanzate"
     }
   ]
 }
