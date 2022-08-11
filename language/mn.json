@@ -1,0 +1,43 @@
+{
+  "semantics": [
+    {
+      "label": "Текст 1",
+      "description": "Барилга угсралтын өмнөх текст.",
+      "default": " "
+    },
+    {
+      "label": "Барилга",
+      "description": "Барилгын JavaScript эсвэл JessieCode код"
+    },
+    {
+      "label": "Текст 2",
+      "description": "Барилга угсралтын дараах текст.",
+      "default": " "
+    },
+    {
+      "label": "Нарийвчилсан тохиргоо",
+      "fields": [
+        {
+          "label": "Самбарын дугаар",
+          "description": "JSXGraph контейнерийн ID. Хэрэв хоосон бол (энэ нь анхдагч юм) JavaScript кодын тогтмол BOARDID-г ашиглана."
+        },
+        {
+          "label": "Өргөн",
+          "description": "JSXGraph контейнерийн өргөн, дурын CSS нэгжийг ашиглана уу."
+        },
+        {
+          "label": "Өндөр",
+          "description": "JSXGraph контейнерийн өндөр, дурын CSS нэгжийг ашиглана уу."
+        },
+        {
+          "label": "Хамгийн их өргөн",
+          "description": "JSXGraph барилгын хамгийн их өргөн."
+        },
+        {
+          "label": "Хэсгийн харьцаа",
+          "description": "JSXGraph барилгын харьцаа."
+        }
+      ]
+    }
+  ]
+}
