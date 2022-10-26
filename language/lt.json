@@ -1,0 +1,41 @@
+{
+  "semantics": [
+    {
+      "label": "Text 1",
+      "description": "Text before the construction."
+    },
+    {
+      "label": "Construction",
+      "description": "JavaScript or JessieCode code for the construction"
+    },
+    {
+      "label": "Text 2",
+      "description": "Text after the construction."
+    },
+    {
+      "fields": [
+        {
+          "label": "Board Id",
+          "description": "Id of the JSXGraph container. If empty (which is the default) use the constant BOARDID in the JavaScript code."
+        },
+        {
+          "label": "Width",
+          "description": "Width of JSXGraph container, use any CSS unit."
+        },
+        {
+          "label": "Height",
+          "description": "Height of JSXGraph container, use any CSS unit."
+        },
+        {
+          "label": "Max-width",
+          "description": "Max-width of JSXGraph construction."
+        },
+        {
+          "label": "Aspect ratio",
+          "description": "Aspect ratio of JSXGraph construction."
+        }
+      ],
+      "label": "Advanced settings"
+    }
+  ]
+}
