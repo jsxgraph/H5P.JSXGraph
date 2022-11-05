@@ -1,41 +1,41 @@
 {
   "semantics": [
     {
-      "label": "Text 1",
-      "description": "Text before the construction."
+      "label": "Tekstas 1",
+      "description": "Tekstas prieš konstrukciją."
     },
     {
-      "label": "Construction",
-      "description": "JavaScript or JessieCode code for the construction"
+      "label": "Konstrukcija",
+      "description": "JavaScript arba JessieCode kodas konstravimui"
     },
     {
-      "label": "Text 2",
-      "description": "Text after the construction."
+      "label": "Tekstas 2",
+      "description": "Tekstas po konstrukcijos."
     },
     {
       "fields": [
         {
-          "label": "Board Id",
-          "description": "Id of the JSXGraph container. If empty (which is the default) use the constant BOARDID in the JavaScript code."
+          "label": "Lentos Id",
+          "description": "Id dėl JSXGraph konteinerio. Jei tuščias (pagal pradinį nustatymą), naudokite BOARDID konstantą JavaScript kode."
         },
         {
-          "label": "Width",
-          "description": "Width of JSXGraph container, use any CSS unit."
+          "label": "Plotis",
+          "description": "Konteinerio JSXGraph plotis, naudokite bet kokį CSS modulį."
         },
         {
-          "label": "Height",
-          "description": "Height of JSXGraph container, use any CSS unit."
+          "label": "Aukštis",
+          "description": "Konteinerio JSXGraph aukštis, naudokite bet kurį CSS modulį."
         },
         {
-          "label": "Max-width",
-          "description": "Max-width of JSXGraph construction."
+          "label": "Maksimalus plotis",
+          "description": "Konstrukcijos JSXGraph maksimalus plotis."
         },
         {
-          "label": "Aspect ratio",
-          "description": "Aspect ratio of JSXGraph construction."
+          "label": "Kraštinių santykis",
+          "description": "Konstrukcijos JSXGraph kraštinių santykis."
         }
       ],
-      "label": "Advanced settings"
+      "label": "Papildomi nustatymai"
     }
   ]
 }
