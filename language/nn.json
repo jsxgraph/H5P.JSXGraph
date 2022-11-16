@@ -1,8 +1,9 @@
 {
   "semantics": [
     {
-      "label": "Text 1",
-      "description": "Text before the construction."
+      "label": "Tekst 1",
+      "description": "Text before the construction.",
+      "default": " "
     },
     {
       "label": "Construction",
