@@ -25,7 +25,7 @@
         },
         {
           "label": "Altura",
-          "description": "Anchura do contedor JSXGraph, usa calquera unidade CSS."
+          "description": "Altura do contedor JSXGraph, usa calquera unidade CSS."
         },
         {
           "label": "Anchura máxima",
