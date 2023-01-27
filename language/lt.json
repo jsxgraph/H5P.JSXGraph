@@ -2,7 +2,8 @@
   "semantics": [
     {
       "label": "Tekstas 1",
-      "description": "Tekstas prieš konstrukciją."
+      "description": "Tekstas prieš konstrukciją.",
+      "default": "_"
     },
     {
       "label": "Konstrukcija",
