@@ -1,0 +1,41 @@
+{
+  "semantics": [
+    {
+      "label": "Maandishi 1",
+      "description": "Maandishi kabla ya ujenzi."
+    },
+    {
+      "label": "Ujenzi",
+      "description": "Msimbo wa JavaScript au JessieCode kwa ajili ya ujenzi"
+    },
+    {
+      "label": "Maandishi 2",
+      "description": "Maandishi baada ya ujenzi."
+    },
+    {
+      "label": "Mipangilio ya hali ya juu",
+      "fields": [
+        {
+          "label": "Kitambulisho cha Bodi",
+          "description": "Kitambulisho cha kontena la JSXGraph. Ikiwa tupu (ambayo ndiyo chaguo-msingi) tumia Kitambulisho cha Bodi ya mara kwa mara katika msimbo wa JavaScript."
+        },
+        {
+          "label": "Upana",
+          "description": "Upana wa chombo cha kontena la grafu la JSXGraph, tumia kitengo chochote cha Karatasi za Mtindo wa Kuteremka (CSS)."
+        },
+        {
+          "label": "Urefu",
+          "description": "Urefu wa chombo cha kontena la grafu la JSXGraph, tumia kitengo chochote cha Karatasi za Mtindo wa Kuteremka (CSS)."
+        },
+        {
+          "label": "Upana wa mwisho",
+          "description": "Upana wa mwisho wa ujenzi kontena la grafu la JSXGraph."
+        },
+        {
+          "label": "Uwiano wa vipengele",
+          "description": "Kipengele cha uwiano wa ujenzi cha kontena la grafu la JSXGraph."
+        }
+      ]
+    }
+  ]
+}

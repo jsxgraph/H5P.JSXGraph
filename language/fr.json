@@ -1,39 +1,39 @@
 {
   "semantics": [
     {
-      "label": "Text 1",
-      "description": "Text before the construction."
+      "label": "Texte 1",
+      "description": "Texte avant la construction."
     },
     {
       "label": "Construction",
-      "description": "JavaScript or JessieCode code for the construction"
+      "description": "Code JavaScript ou JessieCode pour la construction"
     },
     {
-      "label": "Text 2",
-      "description": "Text after the construction."
+      "label": "Texte 2",
+      "description": "Texte après la construction."
     },
     {
-      "label": "Advanced settings",
+      "label": "Paramètres avancés",
       "fields": [
         {
-          "label": "Board Id",
-          "description": "Id of the JSXGraph container. If empty (which is the default) use the constant BOARDID in the JavaScript code."
+          "label": "Identifiant du tableau",
+          "description": "Identifiant du conteneur JSXGraph. S'il est vide (ce qui est la valeur par défaut), utiliser la constante BOARDID dans le code JavaScript."
         },
         {
-          "label": "Width",
-          "description": "Width of JSXGraph container, use any CSS unit."
+          "label": "Largeur",
+          "description": "Largeur du conteneur JSXGraph, utiliser n'importe quelle unité CSS."
         },
         {
-          "label": "Height",
-          "description": "Height of JSXGraph container, use any CSS unit."
+          "label": "Hauteur",
+          "description": "Hauteur du conteneur JSXGraph, utiliser n'importe quelle unité CSS."
         },
         {
-          "label": "Max-width",
-          "description": "Max-width of JSXGraph construction."
+          "label": "Largeur maximale",
+          "description": "Largeur maximale de la construction JSXGraph."
         },
         {
-          "label": "Aspect ratio",
-          "description": "Aspect ratio of JSXGraph construction."
+          "label": "Rapport hauteur/largeur",
+          "description": "Rapport hauteur/largeur de la construction JSXGraph."
         }
       ]
     }
