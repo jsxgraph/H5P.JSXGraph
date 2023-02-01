@@ -1,5 +1,7 @@
 var H5P = H5P || {};
 
+"use strict";
+
 H5P.JSXGraph = (function ($) {
     //   var $ = H5P.jQuery;
     //   this.$ = $(this);
@@ -26,6 +28,21 @@ H5P.JSXGraph = (function ($) {
             replace(/<link.*>/g, '').
             replace(/new Function\(/g, '').
             replace(/\s+eval\(/g, '');
+    };
+
+    const createUUID = function () {
+        // http://www.ietf.org/rfc/rfc4122.txt
+        var s = [];
+        var hexDigits = "0123456789abcdef";
+        for (var i = 0; i < 36; i++) {
+            s[i] = hexDigits.substr(Math.floor(Math.random() * 0x10), 1);
+        }
+        s[14] = "4";  // bits 12-15 of the time_hi_and_version field to 0010
+        s[19] = hexDigits.substr((s[19] & 0x3) | 0x8, 1);  // bits 6-7 of the clock_seq_hi_and_reserved to 01
+        s[8] = s[13] = s[18] = s[23] = "-";
+
+        var uuid = s.join("");
+        return uuid;
     };
 
     /**
@@ -211,8 +228,8 @@ H5P.JSXGraph = (function ($) {
         /**
          * Attribute sandbox for the iframe.
          * Allowed are:
-         *   allow-same-origin	Allows the iframe content to be treated as being from the same origin
-         *   allow-scripts	Allows to run scripts
+         *   allow-same-origin:	Allows the iframe content to be treated as being from the same origin
+         *   allow-scripts:	Allows to run scripts
          *
          * Blocked are:
          *   allow-forms:	Allows form submission
@@ -230,8 +247,7 @@ H5P.JSXGraph = (function ($) {
         if (false) {
             // Use H5P iframe
             $container.append(getHead(libPath, csp, secureJS) + getBody(divId, options));
-        }
-        else {
+        } else if (false) {
             // Create iframe from scratch
             $iframe = $('<iframe src="about:blank" scrolling="auto" frameborder="0"' + sandbox + 'class="h5p-iframe-content h5p-iframe-wrapper" />');
 
@@ -245,6 +261,44 @@ H5P.JSXGraph = (function ($) {
             doc.close();
 
             $iframe.css({ width: '100%', height: this.options.advanced.height });
+        } else {
+
+            const attr = {
+                uuid: createUUID(),
+                url: {
+                    js: './jsxgraphcore.js',
+                    css: './jsxgraph.css'
+                },
+                iframe: {
+                    name: 'jsxgraph_iframe',
+                    id: 'jsxgraph_iframe',
+                    class: 'jxg_iframe',
+                    style: ''
+                },
+                body: {
+                    class: '',
+                    style: 'padding: 20px;'
+                },
+                jsxgraph: {
+                    id: divId,
+                    style: 'width: 600px; aspect-ratio: 1/1;',
+                    class: ''
+                }
+            };
+
+            const createJSXGraphFrame = async function (pre_text, code, post_text, attr) {
+                var jsxgraph_code, jsxgraph_css;
+
+                await fetch(attr.url.js)
+                    .then(response => response.text())
+                    .then(data => { jsxgraph_code = data });
+                await fetch(attr.url.css)
+                    .then(response => response.text())
+                    .then(data => { jsxgraph_css = data });
+
+                writeIframe(jsxgraph_code, jsxgraph_css, pre_text, code, post_text, attr);
+            };
+
         }
         $container.addClass("h5p-jsxgraph");
     };
