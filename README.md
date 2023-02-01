@@ -10,6 +10,7 @@ JSXGraph is implemented in pure JavaScript and does not rely on any other librar
 Have a look at [www.jsxgraph.org](https://jsxgraph.org/).
 
 ##### Features
+
 - Open source
 - High-performance, small footprint
 - No dependencies
