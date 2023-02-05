@@ -152,6 +152,117 @@ H5P.JSXGraph = (function ($) {
         return bodyTxt;
     };
 
+    var getHead2 = function (libPath, secureJS) {
+        var headTxt = '<head>';
+
+        /**
+         * Add JavaScript libraries and CSS files to the iFrame
+         */
+        if (useMathJax) {
+            headTxt +=
+                '<script src="' + libPath + '3rdparty/mathjax/es5/tex-chtml.js" type="text/javascript"></script>';
+        }
+
+        headTxt +=
+            '<script src="' + libPath + 'jsxgraphcore.js" type="text/javascript"></script>' +
+            '<script src="' + libPath + 'jsxgraph_client.js" type="text/javascript"></script>' +
+            '<link rel="stylesheet" href="' + libPath + 'h5p-jsxgraph.css" type="text/css">' +
+            '<link rel="stylesheet" href="' + libPath + 'jsxgraph.css" type="text/css">';
+
+        headTxt += secureJS;
+        headTxt += '</head>';
+
+        return headTxt;
+    };
+
+    var getBody2 = function (divId, options) {
+        var bodyTxt, outerPre, outerPost;
+
+        // Set class on container to identify it as a JSXGraph construction.
+        if (true /*!options.advanced.showFixedSize*/) {
+            // Use the old aspect-ratio hack
+            outerPre = '<div style="max-width:' + options.advanced.maxWidth + ';';
+            outerPre += 'margin: 0 auto;';
+            outerPre += '">'
+            outerPost = '</div>';
+        }
+        else {
+            outerPre = '';
+            outerPost = '';
+        }
+
+        bodyTxt = '<body>' +
+            // First text field
+            '<div id="pre" class="h5p-jsxgraph-comment-post">' +
+            options.commentPre +
+            '</div>' +
+
+            // JSXGraph div
+            outerPre +
+            '<div id="' + divId + '" class="jxgbox" ' +
+            'style="' + getCSSForJXG(options) + '"' +
+            '></div>' +
+            outerPost +
+            '' +
+
+            // JavaScript code
+            '<script type="text/javascript">' +
+            cleanupJS(depurify(options.code).replace(/BOARDID/g, "'" + divId + "'")) +
+            '</script>' +
+
+            // Second text field
+            '<div id="post" class="h5p-jsxgraph-comment-post">'
+            + options.commentPost +
+            '</div>';
+
+        bodyTxt += '</body>';
+
+        return bodyTxt;
+    };
+
+    const writeIframe = function (libPath, secureJS, pre_text, code, post_text, attr) {
+        var src = '', sandbox, allow, csp;
+
+        // Generate HTML source
+        src += '<!DOCTYPE html><html>';
+        src += getHead2(libPath, secureJS);
+
+        src += `<body class="${attr.body.class}" style="${attr.body.style}">`;
+        src += pre_text;
+        src += `<div id="${attr.jsxgraph.id}" class="jxgbox ${attr.jsxgraph.class}" style="${attr.jsxgraph.style}"></div>`;
+        src += post_text;
+        src += '<' + 'script' + '>';
+        src += cleanCode(code);
+        src += '<' + '/script' + '>';
+        src += '</body></html>';
+
+        // const uuid = '${uuid}';
+
+
+        const iframe = document.createElement('iframe');
+        iframe.setAttribute('name', attr.iframe.name);
+        iframe.setAttribute('id', attr.iframe.id);
+        iframe.setAttribute('class', attr.iframe.class);
+        iframe.setAttribute('style', attr.iframe.style);
+        iframe.setAttribute('scrolling', 'no');
+        iframe.setAttribute('srcdoc', src);
+
+        // Security
+        sandbox = 'allow-scripts';
+        allow = "fullscreen *;";
+        csp = 'navigate-to \'none\'; ' +
+            'connect-src \'none\'; ' +
+            'worker-src \'none\'; ' +
+            'script-src \'unsafe-inline\' \'self\';';
+
+        iframe.setAttribute('sandbox', sandbox);
+        iframe.setAttribute('allow', allow);
+        iframe.setAttribute('csp', csp);
+
+        // document.body.appendChild(iframe);
+        return iframe;
+    };
+
     /**
      * Constructor function.
      */
@@ -286,18 +397,7 @@ H5P.JSXGraph = (function ($) {
                 }
             };
 
-            const createJSXGraphFrame = async function (pre_text, code, post_text, attr) {
-                var jsxgraph_code, jsxgraph_css;
-
-                await fetch(attr.url.js)
-                    .then(response => response.text())
-                    .then(data => { jsxgraph_code = data });
-                await fetch(attr.url.css)
-                    .then(response => response.text())
-                    .then(data => { jsxgraph_css = data });
-
-                writeIframe(jsxgraph_code, jsxgraph_css, pre_text, code, post_text, attr);
-            };
+            $iframe = writeIframe(jsxgraph_code, jsxgraph_css, pre_text, code, post_text, attr);
 
         }
         $container.addClass("h5p-jsxgraph");
