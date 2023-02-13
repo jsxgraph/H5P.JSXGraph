@@ -16,8 +16,8 @@
       "label": "Pokročilé nastavení",
       "fields": [
         {
-          "label": "Board Id",
-          "description": "Id of the JSXGraph container. If empty (which is the default) use the constant BOARDID in the JavaScript code."
+          "label": "Id tabule",
+          "description": "ID kontejneru JSXGRAPH. Pokud je prázdný (což je výchozí) použijte konstantní BOARDID v kódu JavaScript."
         },
         {
           "label": "Šířka",
