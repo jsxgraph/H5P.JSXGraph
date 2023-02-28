@@ -11,7 +11,8 @@
     },
     {
       "label": "Tekstas 2",
-      "description": "Tekstas po konstrukcijos."
+      "description": "Tekstas po konstrukcijos.",
+      "default": " "
     },
     {
       "fields": [
