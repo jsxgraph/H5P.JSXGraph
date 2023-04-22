@@ -3,7 +3,7 @@
     {
       "label": "Tekstas 1",
       "description": "Tekstas prieš konstrukciją.",
-      "default": " "
+      "default": "⠀"
     },
     {
       "label": "Konstrukcija",
@@ -12,7 +12,7 @@
     {
       "label": "Tekstas 2",
       "description": "Tekstas po konstrukcijos.",
-      "default": " "
+      "default": "⠀"
     },
     {
       "fields": [
