@@ -2,7 +2,8 @@
   "semantics": [
     {
       "label": "Texto 1",
-      "description": "Texto antes da construción."
+      "description": "Texto antes da construción.",
+      "default": "-"
     },
     {
       "label": "Construción",
@@ -10,7 +11,8 @@
     },
     {
       "label": "Texto 2",
-      "description": "Texto despois da construción."
+      "description": "Texto despois da construción.",
+      "default": "-"
     },
     {
       "label": "Configuración avanzada",
