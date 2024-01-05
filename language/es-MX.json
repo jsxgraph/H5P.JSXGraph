@@ -2,7 +2,8 @@
   "semantics": [
     {
       "description": "Texto antes de la construcción.",
-      "label": "Texto1"
+      "label": "Texto1",
+      "default": "-"
     },
     {
       "description": "JavaScript o JessieCode para la construcción",
@@ -10,7 +11,8 @@
     },
     {
       "description": "Texto después de la construcción.",
-      "label": "Texto2"
+      "label": "Texto2",
+      "default": "-"
     },
     {
       "fields": [
